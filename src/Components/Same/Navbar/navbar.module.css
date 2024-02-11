@@ -1,0 +1,40 @@
+.container{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    height: 70px;
+    width: 100%;
+    color: white;
+    justify-content: center;
+    gap: 30rem;
+}
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;;
+}
+.navitems{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+    
+}
+.link{
+    color: white;
+    transition: all 0.2s ease-in;
+    padding: 1.2rem 1.5rem;
+    border-radius: 20%;
+    text-decoration: none;
+}
+.link:hover{
+    color: black;
+    background-color: blue;
+}
+.icon{
+    size: 20px;
+    height: 20px;
+    width: 10px;
+}

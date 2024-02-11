@@ -1,0 +1,36 @@
+.container, .form{
+    display: flex;
+}
+
+.search{
+    font-size: medium;
+    height: 5rem;
+    width: 100%;
+    max-width: 40rem;
+    margin: 2rem 5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background: rgb(179, 167, 167);
+    color: black;
+}
+.button{
+    background: rgb(0, 0, 0);
+    border: none;
+    border-radius: 0.5rem;
+    margin: 2rem;
+    padding: 1.5rem 3.5rem;
+    color: white;
+}
+.clrbutton{
+    background: white;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    padding: 1.7rem 3.5rem;
+    color: black;
+    margin: 2rem;
+}
+.button , .clrbutton:hover{
+    cursor: pointer;
+}
