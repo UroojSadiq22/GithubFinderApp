@@ -4,8 +4,7 @@ import { Route, Routes } from 'react-router-dom';
 import Navbar from './Components/Same/Navbar';
 import Users from './Components/Feature/Users';
 import Home from './Components/Same/Home';
-import Profile from './Components/Feature/Users/profile';
-import { useState } from 'react';
+
 
 function App() {
 //   const [user , setUser] = useState('')
