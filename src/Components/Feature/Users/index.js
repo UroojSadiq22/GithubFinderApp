@@ -2,7 +2,7 @@ import React from 'react'
 import UserStyle from'./users.module.css'
 import Search from './search'
 
-import { useState , useEffect } from 'react'
+import { useState  } from 'react'
 
 
  const Users = () => {
