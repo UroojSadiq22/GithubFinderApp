@@ -3,7 +3,11 @@
 // import Search from './search'
 // import Navbar from '../Navbar'
 
+<<<<<<< HEAD
 // import { useState , useEffect } from 'react'
+=======
+import { useState  } from 'react'
+>>>>>>> bc811cdb3535a42e86ce359464aeea86eaa29918
 
 
 //  const Users = () => {
