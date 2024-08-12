@@ -1,23 +1,4 @@
-/* .loadercontainer {
-    background-color: black;
-    min-height: 100%;
-    min-width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position:absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1000; /* Ensure loader is on top of other content *//*
-  }
-  
-  .loader {
-    width: 100px; /* Adjust as needed *//*
-    height: 100px; /* Adjust as needed *//*
-  }
-   */
-   /* Full-screen loader */
+ /* Full-screen loader */
 .loaderFullScreen {
   background-color: black;
   min-height: 100%;
@@ -43,6 +24,6 @@
 
 /* Loader style (shared) */
 .loader {
-  width: 100px; /* Adjust as needed */
-  height: 100px; /* Adjust as needed */
+  width: 100px;
+  height: 100px;
 }

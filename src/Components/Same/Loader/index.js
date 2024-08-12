@@ -1,6 +1,6 @@
-import React from 'react';
-import loaderGif from '../../Assests/WMDx.gif'; // Import your loader GIF
-import Loaderstyle from './loader.module.css'; // Import CSS for the loader styling
+import React from "react";
+import loaderGif from "../../Assests/WMDx.gif";
+import Loaderstyle from "./loader.module.css";
 
 const Loader = ({ fullScreen }) => {
   return (
