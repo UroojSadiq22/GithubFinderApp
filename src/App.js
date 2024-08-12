@@ -1,10 +1,10 @@
 
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
-import Navbar from './Components/Same/Navbar';
+import Navbar from './Components/Feature/Navbar';
 import Users from './Components/Feature/Users';
 import Home from './Components/Same/Home';
-import Profile from './Components/Feature/Users/profile';
+import Profile from './Components/Feature/Profile';
 import { useState } from 'react';
 
 function App() {
@@ -22,10 +22,10 @@ function App() {
   return (
 
     <>
-    <Navbar/>
     <Routes>
-      <Route path='/home' element ={<Home/>}></Route>
+      <Route path='/' element ={<Home/>}></Route>
       <Route path='/users' element ={<Users/>}></Route>
+      <Route path='/profile/:username' element={<Profile/>}></Route>
       {/* <Route path='/users/:login' element={props => (<Profile {...props} getuser = {getUser} users={user}/>)}></Route> */}
     </Routes>
     

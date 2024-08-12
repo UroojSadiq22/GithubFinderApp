@@ -1,36 +1,35 @@
-import React from 'react'
-import Searchstyle from './search.module.css'
-import { useState } from 'react'
+import React, { useState } from 'react';
+import Searchstyle from './search.module.css';
 
-const Search = ({onsearch , onclear}) => {
+const Search = ({ onsearch, onclear, setLoading }) => {
+  const [data, setData] = useState('');
 
-const [data , setData] = useState('')
+  const changehandler = (e) => {
+    setData(e.target.value);
+  };
 
-const changehandler = (e) => {
-    setData(e.target.value)
-}
-
-const submithandler =(e) => {
+  const submithandler = (e) => {
     e.preventDefault();
-    onsearch(data)
-    setData('')
+    setLoading(true); // Trigger loading state
+    onsearch(data);
+    setData('');
+  };
 
-
-}
   return (
-    <>
     <div className={Searchstyle.container}>
-    <form className={Searchstyle.form} onSubmit={submithandler}>
-    <input className={Searchstyle.search} value={data} onChange={changehandler} type='text' placeholder='search here ...'></input> 
-    <button className={Searchstyle.button}>Search</button>
-    
-    </form>
-    <button onClick={onclear} className={Searchstyle.clrbutton}>Clear</button>
-
+      <form className={Searchstyle.form} onSubmit={submithandler}>
+        <input
+          className={Searchstyle.search}
+          value={data}
+          onChange={changehandler}
+          type='text'
+          placeholder='Search here ...'
+        />
+        <button type="submit" className={Searchstyle.button}>Search</button>
+        <button type="button" onClick={onclear} className={Searchstyle.clrbutton}>Clear</button>
+      </form>
     </div>
-     
-    </>
-  )
-}
+  );
+};
 
-export default Search
+export default Search;
