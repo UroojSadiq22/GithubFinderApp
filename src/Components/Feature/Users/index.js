@@ -71,7 +71,9 @@ const Users = () => {
               <img src={item.avatar_url} alt="Profile" />
               <h3>{item.login}</h3>
               <div>
-                <a href={item.html_url}>
+                <a href={item.html_url}
+                  target="_blank"
+                  rel="noopener noreferrer">
                   <i className="fa-brands fa-github fa-2x"></i>
                 </a>
 
