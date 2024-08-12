@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import {motion} from 'framer-motion'
-import styleProfile from './profile.module.css'; // Import your CSS module
+import styleProfile from './profile.module.css';
 import Loader from '../../Same/Loader';
 import Navbar from '../Navbar';
 
