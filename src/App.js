@@ -4,12 +4,10 @@ import { Route, Routes } from 'react-router-dom';
 import Navbar from './Components/Feature/Navbar';
 import Users from './Components/Feature/Users';
 import Home from './Components/Same/Home';
-<<<<<<< HEAD
 import Profile from './Components/Feature/Profile';
 import { useState } from 'react';
-=======
 
->>>>>>> bc811cdb3535a42e86ce359464aeea86eaa29918
+
 
 function App() {
 //   const [user , setUser] = useState('')
